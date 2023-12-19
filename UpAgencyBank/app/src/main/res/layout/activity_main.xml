@@ -1,0 +1,867 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+    <LinearLayout
+        android:id="@+id/Home_electricity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp"
+        android:orientation="vertical" >
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/user1"
+                />
+            <Space
+                android:layout_width="8.66dp"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hi, Segun Peters"
+                    android:textFontWeight="600"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome, Let’s make Payments!"
+                    android:textFontWeight="400"
+                    android:textColor="@color/green"
+                    android:textSize="10sp"/>
+            </LinearLayout>
+
+
+            <Space
+                android:layout_width="1dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_notification_2" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+
+
+            <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_money2"
+            android:orientation="horizontal">
+
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle" />
+            </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/deposit"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_deposit" />
+            <Space
+                android:layout_width="30dp"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/withdraw_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_withdraw"
+                />
+            <Space
+                android:layout_width="30dp"
+                android:layout_height="match_parent" />
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_call"
+                />
+        </LinearLayout>
+        <Space
+            android:layout_width="30sp"
+            android:layout_height="30dp" />
+
+        <LinearLayout
+            android:id="@+id/drop1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:background="@color/grey"
+            android:orientation="horizontal">
+        <Space
+            android:layout_width="15sp"
+            android:layout_height="30dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payments"
+                android:textFontWeight="600"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:padding="3dp"
+                android:id="@+id/showDropdownButton" />
+
+
+
+            <Space
+                android:layout_width="100sp"
+                android:layout_weight="1"
+                android:layout_height="30dp" />
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/down"
+                />
+
+
+
+
+        </LinearLayout>
+        <!-- Dropdown List Container with Vertical Orientation  -->
+
+        <LinearLayout
+
+            android:id="@+id/dropdownContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <!-- List Items -->
+            <Space
+                android:layout_width="3dp"
+                android:layout_height="3dp" />
+
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal" >
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/paybytransfer"
+                />
+
+            <TextView
+
+
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Pay Transfer" />
+            <Space
+
+                android:layout_width="1dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/down"
+                />
+        </LinearLayout>
+
+
+
+
+
+
+
+                <!-- List Items -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/user1"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="User Card" />
+                    <Space
+
+                        android:layout_width="1dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent" />
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/down"
+                        />
+                </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal" >
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/depositcard"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Deposit with Card" />
+                <Space
+
+                    android:layout_width="1dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/down"
+                    />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="3dp"
+                android:layout_height="3dp" />
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/depositcash"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Deposit with Cash" />
+                <Space
+
+                    android:layout_width="1dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/down"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal" >
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/enaira1"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="E-Naira" />
+                <Space
+
+                    android:layout_width="1dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/down"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal" >
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/paya1"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="pay Attitude" />
+                <Space
+
+                    android:layout_width="1dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/down"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal" >
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/coral1"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Coral Pay" />
+                <Space
+
+                    android:layout_width="1dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/down"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <Space
+            android:layout_width="30sp"
+            android:layout_height="30dp" />
+
+        <LinearLayout
+            android:id="@+id/drop2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/grey"
+            android:orientation="horizontal">
+            <Space
+                android:layout_width="15sp"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="Services"
+                android:textFontWeight="600"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:id="@+id/showDropdownButton2" />
+
+
+
+            <Space
+
+                android:layout_width="100sp"
+                android:layout_weight="1"
+                android:layout_height="30dp" />
+
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitEnd"
+                android:layout_gravity="right"
+                android:background="@drawable/down"
+                />
+
+
+
+        </LinearLayout>
+        <!-- Dropdown List Container with Vertical Orientation  -->
+
+        <LinearLayout
+            android:id="@+id/dropdownContainer2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <!-- List Items -->
+            <LinearLayout
+                android:id="@+id/airtime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/airtime"
+                    />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="AirTime" />
+                <Space
+
+                    android:layout_width="1dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/down"
+
+                    />
+            </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/data"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Data" />
+                    <Space
+
+                        android:layout_width="1dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent" />
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/down"
+                        />
+                </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/home_elect"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/electricity"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Electricity" />
+                        <Space
+
+                            android:layout_width="1dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent" />
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/down"
+                            />
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="3dp"
+                        android:layout_height="3dp" />
+
+            <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+
+                            android:orientation="horizontal" >
+                            <ImageView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/cable"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:text="Cable TV" />
+                            <Space
+
+                                android:layout_width="1dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent" />
+
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/down"
+                                />
+                        </LinearLayout>
+
+        </LinearLayout>
+        <Space
+            android:layout_width="30sp"
+            android:layout_height="30dp" />
+
+        <LinearLayout
+            android:id="@+id/drop3"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/grey"
+            android:orientation="horizontal">
+            <Space
+                android:layout_width="15sp"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="Settings"
+                android:textFontWeight="600"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:id="@+id/showDropdownButton3" />
+
+
+
+            <Space
+
+                android:layout_width="100sp"
+                android:layout_weight="1"
+                android:layout_height="30dp" />
+
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitEnd"
+                android:layout_gravity="right"
+                android:background="@drawable/down"
+                />
+
+
+        </LinearLayout>
+        <!-- Dropdown List Container with Vertical Orientation  -->
+
+
+        <Space
+            android:layout_width="3dp"
+
+            android:layout_height="3dp" />
+
+
+
+        <LinearLayout
+            android:id="@+id/dropdownContainer3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <!-- List Items -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/download"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Download Parameters" />
+            <Space
+
+                android:layout_width="1dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/down"
+                />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="3dp"
+            android:layout_height="3dp" />
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/key"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Download Keys" />
+            <Space
+
+                android:layout_width="1dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/down"
+                />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="3dp"
+            android:layout_height="3dp" />
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal" >
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/appupdate"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="Application Update" />
+
+            <Space
+
+                android:layout_width="1dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/down"
+                />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="3dp"
+            android:layout_height="3dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/change" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:padding="10dp"
+
+                android:text="Change Pin" />
+            <Space
+
+                android:layout_width="1dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/down"
+                />
+        </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>

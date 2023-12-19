@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+    <LinearLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp"
+
+
+        android:orientation="vertical" >
+
+
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/back_button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:background="@drawable/arrow" />
+
+
+            <Space
+                android:layout_weight="1"
+                android:layout_width="10dp"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:padding="10dp"
+                android:text="Withdraw Money"
+
+                android:textFontWeight="600"
+                android:textSize="15sp"/>
+            <Space
+                android:layout_weight="1"
+                android:layout_width="8.66dp"
+                android:layout_height="18dp" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+
+
+            android:layout_height="1dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="00dp"
+            android:background="@color/grey" />
+
+        <Space
+
+            android:layout_width="8.66dp"
+            android:layout_height="40dp" />
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+
+            android:background="@drawable/line1"/>
+        <Space
+
+            android:layout_width="8.66dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Step 1 of 3 "
+            android:textFontWeight="600"
+            android:padding="10dp"
+            android:textSize="20dp"
+
+            android:textStyle="bold"
+
+            android:textColor="@color/green">
+
+        </TextView>
+
+
+
+
+        <Space
+
+            android:layout_width="8.66dp"
+            android:layout_height="20dp" />
+
+
+        <TextView
+
+            android:padding="10dp"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:text="Select your prefer withdraw methods?"
+            android:textSize="15sp"/>
+
+        <!-- add RadioGroup which contain the many RadioButton-->
+        <RadioGroup
+            android:layout_marginTop="10dp"
+            android:id="@+id/groupradio"
+            android:layout_marginLeft="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <!-- In RadioGroup create the 1 Radio Button-->
+            <!-- like this we will add some more Radio Button-->
+            <RadioButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radia_id1"
+                android:text="Pay by Transfer"
+                android:textSize="15sp"/>
+
+            <RadioButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radia_id2"
+                android:text="Request Money (USSD)"
+                android:textSize="15sp"/>
+
+            <RadioButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radia_id3"
+                android:text="Generative PayCode"
+                android:textSize="15sp"/>
+
+
+        </RadioGroup>
+
+
+
+        <Space
+
+            android:layout_width="match_parent"
+            android:layout_height="150dp"/>
+
+        <ImageView
+            android:id="@+id/proceed2"
+
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+
+
+
+            android:background="@drawable/cont"
+
+            android:padding="15dp" />
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
